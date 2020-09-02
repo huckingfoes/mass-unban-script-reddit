@@ -2,7 +2,7 @@
 
 Allows moderators to mass unban users between a date range.
 
-1. pip install -r requirements.txt
+1. pip3 install -r requirements.txt
 2. Replace values in praw-example.ini with your API information
 3. Rename praw-example.ini to praw.ini
 4. Edit the constants on the top of mass-unbanner.py to specify dates and subreddit
