@@ -17,7 +17,7 @@ endDate = parse(END_BAN_PERIOD)
 
 subreddit = reddit.subreddit(SUBREDDIT_NAME)
 
-for bannedUser in subreddit.banned():
+for bannedUser in subreddit.banned(limit=None):
 	unixTimestamp = int(bannedUser.date)
 	currentBanDate = datetime.utcfromtimestamp(unixTimestamp)
 	
